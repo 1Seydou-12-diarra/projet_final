@@ -1,0 +1,56 @@
+<br><br><br>
+<div class="cart-top container-fluid">
+    <div class="container d-flex">
+      <div class="item">
+        <a routerLink="/beaute">
+          <h5>Beaute</h5>
+        </a>
+      </div>
+      <div class="item">
+        <a routerLink="/cheveux">
+          <h5>Cheveux</h5>
+        </a>
+      </div>
+      <div class="item">
+        <a routerLink="/corps">
+          <h5>Corps</h5>
+        </a>
+      </div>
+      <div class="item">
+        <a routerLink="/parfum">
+          <h5>Parfums</h5>
+        </a>
+      </div>
+      <div class="item">
+        <a routerLink="/bebe">
+         
+          <h5>Bebe && Enfants</h5>
+        </a>
+      </div>
+      <div class="item">
+        
+        <a routerLink="/homme">
+          <h5>Homme</h5>
+        </a>
+      </div>
+  </div>
+  </div>
+  
+  
+  <div class="container  star">
+    <div class="row">
+      <ng-container *ngFor="let item of filterCategory | filter:searchKey:'nom'">
+        <div class="card col-md-3">
+          <img [src]="item.img" [alt]="item.nom">
+          <h4 class="item-card">{{item.nom}}</h4>
+          <p class="item-card">{{item.descriptions}}</p>
+          <p> <span class="fw-bold">Prix : </span>{{item.prix}}FCFA</p>
+          <button class="btn btn-outline-warning" (click)="addtocart(item)">Ajouter Au panier</button>
+        </div>
+      </ng-container>
+    </div>
+  </div>
+  <br><br>
+  <app-infoshop></app-infoshop>
+  <br><br><br><br>
+  <app-footer></app-footer>

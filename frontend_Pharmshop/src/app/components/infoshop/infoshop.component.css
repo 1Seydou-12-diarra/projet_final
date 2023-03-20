@@ -1,0 +1,23 @@
+/** le bas de la page produits*/
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    margin-left: 105px;
+  }
+
+
+  @media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+      font-size: 3.5rem;
+    }
+  }
+
+  p{margin-left: 105px;}
+h2{margin-left: 105px;}
+.phara{width: 45px;
+height: 45px;
+border-radius: 50px;
+margin-left: 105px;}
